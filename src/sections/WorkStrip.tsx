@@ -34,7 +34,7 @@ function ProjectRow({ p, idx }: { p: Project; idx: number }) {
       <div className={styles.desc} style={{ fontFamily: FONTS.display, fontSize: 15, color: BRAND.graphite, lineHeight: 1.5 }}>
         {p.desc}
       </div>
-      <div className={styles.tags} style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+      <div className={styles.tags}>
         {p.tags.map((t) => (
           <span
             key={t}

@@ -21,6 +21,7 @@
 }
 
 .desc  { max-width: 400px; }
+.tags  { display: flex; flex-wrap: wrap; gap: 6px; }
 .kpi   {}
 .arrow { text-align: right; }
 
@@ -33,7 +34,7 @@
 
 @media (max-width: 1024px) {
   .row {
-    grid-template-columns: 40px 1fr auto 32px;
+    grid-template-columns: 40px 1fr 32px;
     padding: 20px 24px;
   }
   .desc { display: none; }
@@ -41,7 +42,7 @@
 }
 
 @media (max-width: 767px) {
-  .header { grid-template-columns: 1fr; gap: 24px; }
+  .header { grid-template-columns: 1fr; gap: 0; margin-bottom: 32px; }
   .row {
     grid-template-columns: 32px 1fr 24px;
     gap: 16px;
