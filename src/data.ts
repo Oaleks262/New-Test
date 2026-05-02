@@ -1,0 +1,48 @@
+import type { Project } from './types';
+
+export const PROJECTS: Project[] = [
+  {
+    id: 'p1',
+    client: 'Studio Mano',
+    type: 'Нейл-студія',
+    year: '2026',
+    format: 'Сайт + онлайн-запис',
+    kpi: '+180% заявок',
+    desc: 'Преміальний сайт з вбудованим записом. Заміна Instagram-бронювання.',
+    tags: ['Next.js', 'Запис', 'SEO'],
+    palette: ['#F2EFE8', '#0B0B0C', '#D7FF3A'],
+  },
+  {
+    id: 'p2',
+    client: 'Відновлення.',
+    type: 'Масажна практика',
+    year: '2025',
+    format: 'Лендинг',
+    kpi: '38% conv. rate',
+    desc: 'Односторінковий лендинг з фокусом на записі через WhatsApp.',
+    tags: ['Лендинг', 'WhatsApp', 'Мобайл'],
+    palette: ['#0B0B0C', '#C7B8A1', '#E63B2E'],
+  },
+  {
+    id: 'p3',
+    client: "Кав'ярня Цех",
+    type: 'Speciality coffee',
+    year: '2025',
+    format: 'Онлайн-меню + loyalty',
+    kpi: '2400 MAU',
+    desc: 'QR-меню з системою лояльності. Повна кастомізація під брендбук.',
+    tags: ['PWA', 'QR', 'Лояльність'],
+    palette: ['#2A1F14', '#F2EFE8', '#D4A04A'],
+  },
+  {
+    id: 'p4',
+    client: 'Ольга Ковчик',
+    type: 'Графічний дизайн',
+    year: '2025',
+    format: 'Портфоліо',
+    kpi: '—',
+    desc: 'Мінімалістичне портфоліо з кейсами. Власна CMS для швидкого оновлення.',
+    tags: ['Портфоліо', 'CMS', 'Анімації'],
+    palette: ['#F2EFE8', '#0B0B0C', '#FF6B35'],
+  },
+];

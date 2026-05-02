@@ -1,0 +1,80 @@
+/* ── Reset ─────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body { background: #F2EFE8; color: #0B0B0C; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+button { font-family: inherit; cursor: pointer; appearance: none; }
+a { color: inherit; }
+input, textarea { font-family: inherit; }
+img { display: block; max-width: 100%; }
+ul, ol { list-style: none; }
+
+/* ── CSS Custom Properties ──────────────────── */
+:root {
+  --ink:        #0B0B0C;
+  --ink-soft:   #1A1A1C;
+  --paper:      #F2EFE8;
+  --paper-soft: #E6E2D8;
+  --graphite:   #2A2A2D;
+  --ash:        #8A8A87;
+  --signal:     #D7FF3A;
+
+  --font-display: 'Space Grotesk', 'Neue Haas Grotesk', -apple-system, sans-serif;
+  --font-mono:    'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace;
+  --font-serif:   'Instrument Serif', 'Times New Roman', serif;
+
+  --page-px: 48px;
+  --section-py: 120px;
+  --max-w: 1440px;
+}
+
+@media (max-width: 1024px) {
+  :root { --page-px: 32px; --section-py: 80px; }
+}
+@media (max-width: 767px) {
+  :root { --page-px: 20px; --section-py: 60px; }
+}
+
+/* ── Keyframes ──────────────────────────────── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-33.333%); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Page transition ────────────────────────── */
+.page-enter {
+  animation: fadeIn 0.25s ease both;
+}
+
+/* ── Container ──────────────────────────────── */
+.container {
+  max-width: var(--max-w);
+  margin-inline: auto;
+  padding-inline: var(--page-px);
+}
+
+/* ── Scrollbar ──────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--paper); }
+::-webkit-scrollbar-thumb { background: var(--ink); }
+
+/* ── Focus visible ──────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 2px;
+}
+
+/* ── Selection ──────────────────────────────── */
+::selection {
+  background: var(--signal);
+  color: var(--ink);
+}
