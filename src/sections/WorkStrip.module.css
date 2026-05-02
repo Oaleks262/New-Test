@@ -16,6 +16,10 @@
   align-items: center;
 }
 
+.row:last-child {
+  border-bottom: none !important;
+}
+
 .desc  { max-width: 400px; }
 .kpi   {}
 .arrow { text-align: right; }
@@ -41,7 +45,7 @@
   .row {
     grid-template-columns: 32px 1fr 24px;
     gap: 16px;
-    padding: 16px 0;
+    padding: 16px 20px;
   }
   .kpi   { display: none; }
   .tags  { display: none; }

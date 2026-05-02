@@ -36,6 +36,6 @@
 
 @media (max-width: 767px) {
   .grid { grid-template-columns: 1fr; }
-  .step { border-right: none !important; border-bottom: 1px solid #2A2A2D; min-height: auto; padding: 28px 0; }
+  .step { border-right: none !important; border-bottom: 1px solid #2A2A2D; min-height: auto; padding: 28px 20px; }
   .step:last-child { border-bottom: none; }
 }
